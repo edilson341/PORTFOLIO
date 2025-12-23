@@ -51,7 +51,7 @@ body {
 }
 
 span{
-  color: red;
+  color: rgb(3, 0, 196);
 }
 
 .navbar a{
@@ -65,7 +65,7 @@ span{
 
 .navbar a:hover{
     color: blue;
-    border-bottom: 3px solid rgb(241, 0, 0);
+    border-bottom: 3px solid rgb(29, 0, 196);
 }
 
 .gradient-btn{
@@ -136,9 +136,9 @@ div#social{
 .imagem img{
     width: 380px;
     height: 380px;
-    box-shadow: o o 20px color(srgb red green blue) ;
+    box-shadow: o o 20px color(srgb rgb(3, 0, 158) rgb(19, 0, 128) blue) ;
     border-radius: 50%;
-    border: 3px solid rgb(255, 0, 0);
+    border: 3px solid rgb(17, 0, 173);
     transition: all 1.0s ease;
 }
 
@@ -165,8 +165,8 @@ div#social{
     box-shadow: o o 20px color(srgb red green blue) ;
      border-radius: 50%;
      transition: all 0.5s ease;
-     border: #e70000;
-     border: 3px solid rgb(255, 0, 0);
+     border: #1900a8;
+     border: 3px solid rgb(13, 0, 189);
                
     
 
@@ -174,7 +174,7 @@ div#social{
 }
 
 .sobre-img img:hover{
-       box-shadow: 0 10px 20px rgb(255, 0, 0);
+       box-shadow: 0 10px 20px rgb(39, 0, 182);
        transform: translateY(-10px) scale(1.03);
 }
 
@@ -239,7 +239,7 @@ div#social{
 .progress {
     Height: 100%;
     Border-radius: 50px;
-    Background: linear-gradient(90deg, #b80909e1, #b40303);
+    Background: linear-gradient(90deg, #000bace1, #0a0092);
     width: 0;
     transition: width 1.5s ease-in-out;
 }
@@ -364,8 +364,8 @@ font-size: 15px;
 }
 
 .btn-projeto:hover{
-    background: #ca0000;
-    box-shadow: 0 0 25px rgb(228, 0, 0);
+    background: #2501c4;
+    box-shadow: 0 0 25px rgb(42, 0, 228);
     transform: scale(1.05);
 }
 
