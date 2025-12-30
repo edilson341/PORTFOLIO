@@ -97,6 +97,7 @@ span{
 
 .home-content{
     max-width: 500px;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
@@ -129,10 +130,6 @@ div#social{
 }
 
 
-
-
-
-
 .imagem img{
     width: 380px;
     height: 380px;
@@ -156,7 +153,7 @@ div#social{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background: #080808;
+    background: #080808;  
 }
 
 .sobre-img img{
@@ -166,11 +163,7 @@ div#social{
      border-radius: 50%;
      transition: all 0.5s ease;
      border: #1900a8;
-     border: 3px solid rgb(13, 0, 189);
-               
-    
-
-    
+     border: 3px solid rgb(13, 0, 189);   
 }
 
 .sobre-img img:hover{
@@ -178,15 +171,13 @@ div#social{
        transform: translateY(-10px) scale(1.03);
 }
 
-
 .sobre-content h2{
     font-size: 3rem;
     text-align: left;
 }
 
 .sobre-content p{
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 
 
@@ -199,6 +190,7 @@ div#social{
     Margin: 50px auto;
     Box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     Text-align: center;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }	
 
 .skills-box h2 {
@@ -436,3 +428,96 @@ button {
 button:hover {
     background: #1e40af;
 }
+
+
+
+/* ============================= */
+/* RESPONSIVO PARA CELULAR */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        padding: 1rem 5%;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #080808;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 18px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    /* HOME */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 120px 5% 50px;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-img {
+        width: 260px;
+        height: 260px;
+        margin-top: 30px;
+    }
+
+    .imagem img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* SOBRE MIM */
+    .sobre {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .sobre-img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* HABILIDADES */
+    .skills-box {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    /* PROJECTOS */
+    .PROJECTOS-caixa {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACTO */
+    .contact-container {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
