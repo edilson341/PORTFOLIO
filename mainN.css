@@ -33,9 +33,11 @@ body {
 
 #menu-icon{
     font-size: 3.5rem;
-    color: #ea580c;
+    color: #2214e7;
     display: none;
+    cursor: pointer;
 }
+
 
 
 .logo{
